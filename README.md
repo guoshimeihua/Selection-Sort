@@ -37,21 +37,21 @@
 
 在选择排序过程中，假设tj表示对那个值j在第5行执行的while循环测试的次数(j是t的下坐标)。当一个for或while循环按通常的方式退出时，执行测试的次数比执行循环体的次数多1。每条语句的执行时间和执行次数如下图所示：
 
-放置图片
+![selection-sort-01](https://github.com/guoshimeihua/Selection-Sort/blob/master/selection-sort-01.jpg)
 
 由此可见SELECTION-SORT的运行时间T(n)等于：
 
-放置图片
+![selection-sort-01](https://github.com/guoshimeihua/Selection-Sort/blob/master/selection-sort-02.jpg)
 
 在给定规模的情况下，一个算法的运行时间也可能与给定规模下的哪个输入有关。比如，若输入数组已经排序好，则出现最佳情况，这时第7行、8行tj=1。在第5行，我们必须将每个元素与min比较，所以有tj=n。该最佳情况的运行时间为：
 
-放置图片
+![selection-sort-01](https://github.com/guoshimeihua/Selection-Sort/blob/master/selection-sort-03.jpg)
 
 因此它是n的二次函数，时间复杂度为O(n*n)。
 
 若输入数组已经反向排序，则导致最坏情况。这个时候第5、6、7、8、9行tj=n。在最坏情况下的运行时间为：
 
-放置图片
+![selection-sort-01](https://github.com/guoshimeihua/Selection-Sort/blob/master/selection-sort-04.jpg)
 
 在最坏情况下，时间复杂度也为O(n*n)。到这里就可以看出，选择排序算法最好情况与最坏情况是一样的。
 
@@ -83,7 +83,8 @@
 
 
 
-
+
+
 
 
 
